@@ -73,6 +73,14 @@ that could not answer (`reason: "error"`) or whose passages all lost to `limit`
 with no model call, for recall before every turn of an agent whose own model judges what it is
 handed; the default `full` is the engine's whole retrieval.
 
+What a hit carries, and what it does not. Read a `type: "memory"` hit again with
+`memories.get(id)` and the record adds `source_time` (when the thing happened) and
+`recorded_at` (when it was written down), so a passage can be placed in time and attributed to
+its Memory. What no hit carries is a link from a learned fact back to the conversation or
+document that produced it, with the reasoning attached: the passage and its Memory are the
+provenance on offer today. Code that needs to show a person *why* a fact is held has to keep
+that trail itself.
+
 A search is a **turn** inside the account's container, not a query on an index. The first one
 after a quiet spell includes runtime startup; the SDKs default to 90
 seconds per request, which is configurable and is not a latency guarantee. There are no metadata filters, because there is no server-side index to apply
