@@ -64,6 +64,15 @@ information already saved to memory is retained. **Delete everything** in Settin
 account data while retaining your sign-in identity. Review each confirmation and download
 any data you want to keep before proceeding. [Deletion and access controls](/concepts/#stopping-and-undoing).
 
+## Does my memory follow me between machines?
+
+A hosted Memory is reached over the API, so every machine and every client talks to the same
+one: there is nothing to sync and nothing to copy between setups. Two laptops and a server
+running agents all read and write the same Memories, subject to what each key reaches.
+
+A local Memory (`unibaseio-membase[local]`) is the opposite by design — it lives on the machine
+running it, and is not shared with anything else.
+
 ## How is this different from searching my files?
 
 A Memory processes source material and retains information for later retrieval. Updating a

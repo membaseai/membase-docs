@@ -89,6 +89,21 @@ your account. Lapsing a subscription stops access at once. See
 * **Metadata is not a filter.** Search has no metadata filters and `add_document` refuses a `metadata` field (`422`); `custom_id` is your own bookkeeping and cannot separate people.
 * **Reach is not a secret.** A key with *All memories* reaches Memories the user makes later. Say so when you ask for one.
 
+## One person, several clients
+
+Asked often enough to be worth separating from the rest of this page: running Claude Code and
+Cursor against the same account is not a case of isolation failing, and keeping two projects
+apart is not something the clients do for you.
+
+A search covers **every Memory the key reaches**. So a single key granted *All memories* will,
+correctly, answer from all of them wherever you call it from — the question "does it pull the
+wrong memories when I jump between projects" is really a question about what that key reaches.
+
+Give each client, or each project, its own key granted only its own Memories. The grant is
+enforced rather than advisory: an id outside it answers `404`, the same as an id that does not
+exist. Nothing has to be synchronised between machines for this — the grant lives with the key,
+not with the client.
+
 ## Checking it
 
 The negative cases are the ones to test:

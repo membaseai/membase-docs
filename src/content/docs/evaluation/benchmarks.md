@@ -122,6 +122,15 @@ LoCoMo tests recall across a long two-person history. LongMemEval_S tests findin
 103k-token haystack and updating or abstaining correctly. DMR tests the fidelity of what was
 extracted. A memory system needs all three, which is why each is reported separately.
 
+## Beyond the benchmarks
+
+A benchmark is a controlled question set, so it answers how retrieval behaves on those sets and
+nothing else. For what the same engine does in an application there are 19 runnable demos in
+[membase-use-cases](https://github.com/unibaseio/membase-use-cases) — each one calls the real
+API, carries about a minute of video, and can be run against either a hosted Memory or a local
+one. They are the closest thing here to "does this hold up outside a benchmark", and they are
+meant to be run rather than read.
+
 ## How this differs from RAG over the transcript
 
 Raw chunks lose who said what and when. Episodes are written with speaker, time and context
