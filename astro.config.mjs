@@ -15,7 +15,7 @@ export default defineConfig({
             'Membase keeps memory from your notes, files and conversations and lets your assistant, connected AI apps (MCP) and your own code (SDK, REST) use it.',
         }),
       ],
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/unibaseio/membase' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/membaseai/membase' }],
       sidebar: [
   {
     "label": "Overview",
@@ -322,11 +322,11 @@ export default defineConfig({
       },
       {
         "label": "membase on GitHub",
-        "link": "https://github.com/unibaseio/membase"
+        "link": "https://github.com/membaseai/membase"
       },
       {
         "label": "Local engine reference",
-        "link": "https://github.com/unibaseio/membase/blob/main/docs/reference.md"
+        "link": "https://github.com/membaseai/membase/blob/main/docs/reference.md"
       }
     ]
   }
