@@ -1,11 +1,11 @@
 ---
 title: "Benchmarks"
-description: "LoCoMo, LongMemEval_S and DMR results for the local Membase engine (unibaseio-membase-core), with the method behind each number."
+description: "LoCoMo, LongMemEval_S and DMR results for the local Membase engine (membase-core), with the method behind each number."
 ---
 
-LoCoMo, LongMemEval_S and DMR results for the local Membase engine (unibaseio-membase-core), with the method behind each number.
+LoCoMo, LongMemEval_S and DMR results for the local Membase engine (membase-core), with the method behind each number.
 
-This report covers `unibaseio-membase-core`, the engine that `pip install 'unibaseio-membase[local]'`
+This report covers `membase-core`, the engine that `pip install 'membase-ai[local]'`
 runs on your machine. The hosted Membase service does not run this engine today, so these
 scores and latency figures are not measurements of the hosted Membase API, account startup,
 or an end-to-end app task.

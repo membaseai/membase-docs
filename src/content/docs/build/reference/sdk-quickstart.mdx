@@ -23,13 +23,13 @@ enforced server-side, so the SDK cannot do anything the key cannot.
 <TabItem label="Python">
 
 ```bash
-pip install unibaseio-membase
+pip install membase-ai
 ```
 
 Version 0.4.0 or newer. Python 3.10 or newer for the hosted client. One dependency, `httpx`.
 
-For local mode, `pip install 'unibaseio-membase[local]'` on Python 3.12 or 3.13. It installs the
-`unibaseio-membase-core` engine and runs memory on your machine; the engine calls a model
+For local mode, `pip install 'membase-ai[local]'` on Python 3.12 or 3.13. It installs the
+`membase-core` engine and runs memory on your machine; the engine calls a model
 provider, by default OpenAI (`OPENAI_API_KEY`).
 
 Local search returns results in retrieval order. To rerank them, set `MEMBASE_RERANK`:
