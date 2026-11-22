@@ -73,7 +73,7 @@ endpoint you named.
 <TabItem label="TypeScript">
 
 ```bash
-npm install @unibaseio/membase
+npm install @membaseai/membase
 ```
 
 Version 0.4.0 or newer. Node 18 or newer (global `fetch`), Deno or Bun. Zero dependencies;
@@ -123,7 +123,7 @@ client = Membase(local=True)                    # local mode, in ~/.membase (MEM
 <TabItem label="TypeScript">
 
 ```ts
-import { Membase } from "@unibaseio/membase";
+import { Membase } from "@membaseai/membase";
 
 const client = new Membase();                                    // MEMBASE_API_KEY from the environment
 const explicit = new Membase({ apiKey: "mbk_…" });               // or explicit
@@ -354,7 +354,7 @@ except WriteTargetRequiredError as e:
 <TabItem label="TypeScript">
 
 ```ts
-import { ConfirmationRequiredError, WriteTargetRequiredError } from "@unibaseio/membase";
+import { ConfirmationRequiredError, WriteTargetRequiredError } from "@membaseai/membase";
 
 try {
   await client.memories.forget("mem_…");

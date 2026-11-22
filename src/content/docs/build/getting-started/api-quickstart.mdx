@@ -94,13 +94,13 @@ if not found["items"]:
 
 <TabItem label="TypeScript">
 
-Install with `npm install @unibaseio/membase` (0.4.0 or newer) and run this in a server-side
+Install with `npm install @membaseai/membase` (0.4.0 or newer) and run this in a server-side
 TypeScript project on Node 18 or newer. The package is ESM-only and the example uses top-level `await`, so the
 project must be an ES module: `"type": "module"` in `package.json`, or save the file as
 `quickstart.mts`. Keep the key on the server, outside browser bundles.
 
 ```ts
-import { Membase } from "@unibaseio/membase";
+import { Membase } from "@membaseai/membase";
 
 const client = new Membase();
 const customId = "quickstart-ledger-v1";
