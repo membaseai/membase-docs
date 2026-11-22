@@ -19,7 +19,7 @@ definitions.
 
 ```ts
 import OpenAI from "openai";
-import { Membase } from "@unibaseio/membase";
+import { Membase } from "@membaseai/membase";
 
 const memory = new Membase();
 const openai = new OpenAI();

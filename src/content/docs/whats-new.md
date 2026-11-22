@@ -5,6 +5,14 @@ description: "New features and significant updates for Membase users and develop
 
 New features and significant product changes, newest first.
 
+## November 2026
+
+**The npm packages moved to the `@membaseai` scope (21 Nov).** Install
+`@membaseai/membase` and `@membaseai/membase-cli`; the `@unibaseio` ones are deprecated and
+point here. Same code, same 0.4.0 — only the name changed. **The PyPI packages keep their
+names**: `pip install unibaseio-membase` (and `'unibaseio-membase[local]'`) is still correct,
+because PyPI cannot rename a package.
+
 ## October 2026
 
 **SDK packages renamed (11 Oct).** The Python SDK is now `unibaseio-membase` on PyPI and the

@@ -160,7 +160,7 @@ print(next(b.text for b in final.content if b.type == "text"))
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodTool } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
-import { Membase } from "@unibaseio/membase";
+import { Membase } from "@membaseai/membase";
 
 const memory = new Membase();            // MEMBASE_API_KEY
 const claude = new Anthropic();
