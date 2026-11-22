@@ -8,8 +8,8 @@ New features and significant product changes, newest first.
 ## October 2026
 
 **SDK packages renamed (11 Oct).** The Python SDK is now `unibaseio-membase` on PyPI and the
-TypeScript SDK `@unibaseio/membase` on npm, both from 0.3.0. The Python package includes the
-`membase` command line; `@unibaseio/membase-cli` provides the same command for the hosted API
+TypeScript SDK `@membaseai/membase` on npm, both from 0.3.0. The Python package includes the
+`membase` command line; `@membaseai/membase-cli` provides the same command for the hosted API
 without Python. `pip install 'unibaseio-membase[local]'` adds an MCP server (`membase mcp`)
 and, on Python 3.12 or 3.13, runs the memory engine on your machine: `Membase(local=True)` in
 Python, or `membase --local serve` for the same API over local HTTP.
