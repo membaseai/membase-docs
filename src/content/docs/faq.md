@@ -70,14 +70,14 @@ A hosted Memory is reached over the API, so every machine and every client talks
 one: there is nothing to sync and nothing to copy between setups. Two laptops and a server
 running agents all read and write the same Memories, subject to what each key reaches.
 
-A local Memory (`unibaseio-membase[local]`) is the opposite by design — it lives on the machine
+A local Memory (`membase-ai[local]`) is the opposite by design — it lives on the machine
 running it, and is not shared with anything else.
 
 ## How is this different from searching my files?
 
 A Memory processes source material and retains information for later retrieval. Updating a
 source and updating its Memory are separate actions. The [benchmarks](/evaluation/benchmarks/)
-measure the local memory engine (`unibaseio-membase[local]`), not hosted Memories or the hosted API.
+measure the local memory engine (`membase-ai[local]`), not hosted Memories or the hosted API.
 
 Questions about API status codes, metadata filters or serving multiple users are covered in
 [API troubleshooting](/build/reference/troubleshooting/).
