@@ -45,8 +45,8 @@ after a failed sync), **Reauthorize** or **Reconnect** when they apply, plus **M
 
 A Memory over conversations keeps memory about *the person*: what they asked, decided,
 adopted. It does not restate what an assistant explained. Its instruction is a **filter on
-the chats, not a subject**: *unibase* keeps what the chats say that bears on Unibase, not a
-description of Unibase. An instruction written as a topic produces a log; written as a
+the chats, not a subject**: *acme* keeps what the chats say that bears on Acme, not a
+description of Acme. An instruction written as a topic produces a log; written as a
 filter it produces the standing facts the person would want any other assistant to know.
 
 ## If something looks wrong

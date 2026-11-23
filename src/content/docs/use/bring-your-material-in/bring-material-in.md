@@ -60,7 +60,7 @@ If your account already has this connection (another memory uses it, say), the d
 
 A memory over your conversations keeps memory about *you*: what you asked, decided, adopted. It
 does not restate what an assistant explained. Its instruction is a filter on the chats, not a
-subject: *unibase* keeps what the chats say that bears on Unibase, not a description of Unibase.
+subject: *acme* keeps what the chats say that bears on Acme, not a description of Acme.
 
 ## Talking to your assistant
 
