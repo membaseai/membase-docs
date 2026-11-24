@@ -114,7 +114,7 @@ Four pieces working together.
 * **Grading.** gpt-4o-mini judges every benchmark, with one prompt each: Memori's CORRECT/WRONG prompt for LoCoMo, the same prompt plus LongMemEval's official per-type rules for LongMemEval_S, and MemGPT's prompt in Zep's harness for DMR. Every question in the set is counted once; a failed call is graded wrong.
 * **No re-runs.** Each accuracy number is one pass over the full question set. No best-of-N, no merging of re-runs. Each benchmark has one answer prompt; none carries rules for individual questions.
 * **Models.** OpenAI only: gpt-4.1-mini for extraction and retrieval decisions, text-embedding-3-small for vectors, and the reader listed per benchmark. The same stores answer with any OpenAI-compatible model.
-* **Reproducing.** The harness, dataset loaders, judge configuration and run commands live in [membase-bench](https://github.com/membaseai/membase-bench), pinned to `unibaseio-membase-core==0.3.0`. The published numbers come from runs on 18–21 September 2026, before any engine release; 0.3.0 was released on 11 October.
+* **Reproducing.** The harness, dataset loaders, judge configuration and run commands live in [membase-bench](https://github.com/membaseai/membase-bench), pinned to the exact engine release it runs, `unibaseio-membase-core==0.3.4` (the engine's package name before it was published as `membase-core`; the pin keeps the former name so the runs stay reproducible). The published numbers come from runs on 18–21 September 2026, before any engine release; 0.3.0 was released on 11 October.
 
 ## Which benchmark matters
 

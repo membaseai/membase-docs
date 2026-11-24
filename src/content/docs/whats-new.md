@@ -7,18 +7,21 @@ New features and significant product changes, newest first.
 
 ## November 2026
 
+**The Python packages are `membase-ai` and `membase-core` (22 Nov).** Install
+`pip install membase-ai` (and `'membase-ai[local]'` for the local engine). The import is still
+`import membase`, and the command is still `membase`. The packages under the former names
+stay at their last release and get no further updates.
+
 **The npm packages moved to the `@membaseai` scope (21 Nov).** Install
-`@membaseai/membase` and `@membaseai/membase-cli`; the `@unibaseio` ones are deprecated and
-point here. Same code, same 0.4.0 — only the name changed. **The PyPI packages keep their
-names**: `pip install membase-ai` (and `'membase-ai[local]'`) is still correct,
-because PyPI cannot rename a package.
+`@membaseai/membase` and `@membaseai/membase-cli`; the packages under the former scope are
+deprecated and point here. Same code, same 0.4.0 — only the name changed.
 
 ## October 2026
 
-**SDK packages renamed (11 Oct).** The Python SDK is now `membase-ai` on PyPI and the
-TypeScript SDK `@unibaseio/membase` on npm, both from 0.3.0. The Python package includes the
-`membase` command line; `@unibaseio/membase-cli` provides the same command for the hosted API
-without Python. `pip install 'membase-ai[local]'` adds an MCP server (`membase mcp`)
+**SDK packages renamed (11 Oct).** The Python and TypeScript SDKs were published under new
+names from 0.3.0; today they are `membase-ai` on PyPI and `@membaseai/membase` on npm (see
+November). The Python package includes the `membase` command line; `@membaseai/membase-cli`
+provides the same command for the hosted API without Python. `pip install 'membase-ai[local]'` adds an MCP server (`membase mcp`)
 and, on Python 3.12 or 3.13, runs the memory engine on your machine: `Membase(local=True)` in
 Python, or `membase --local serve` for the same API over local HTTP.
 [SDKs](/build/reference/sdk-quickstart/).
