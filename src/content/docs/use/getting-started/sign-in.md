@@ -1,17 +1,16 @@
 ---
 title: "Sign in"
-description: "Continue with Google, X or email through Privy, or connect a wallet, then Home and the first-run guide."
+description: "Continue with Google, X or email through Privy, then Home and the first-run guide."
 ---
 
-Continue with Google, X or email through Privy, or connect a wallet, then Home and the first-run guide.
+Continue with Google, X or email through Privy, then Home and the first-run guide.
 
-The sign-in gate has two buttons. **Continue with Google, X or email** opens the Privy sign-in
-window, where you pick how to prove who you are. **Connect a wallet** talks to your browser
-wallet directly.
+**Continue with Google, X or email** opens the Privy sign-in window, where you pick how to
+prove who you are. The sign-in gate also offers another sign-in option for people who already
+use one.
 
-1. Open the app and press **Continue with Google, X or email**, or **Connect a wallet**.
-2. Finish that provider's steps: the Privy window for Google, X or email, or your wallet's own
-   prompt.
+1. Open the app and press **Continue with Google, X or email**.
+2. Finish the steps in the Privy sign-in window.
 3. You land on Home. The first-run guide opens by itself on a new account.
 
 An invite link (`/?invite=CODE`) is applied when you sign in. Your own invite link is on the

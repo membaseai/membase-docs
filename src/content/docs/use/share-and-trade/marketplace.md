@@ -41,7 +41,7 @@ revoked by the seller; a paid period does not guarantee access after the seller 
 ### Buying
 
 Choose the purchase or subscription action shown on the listing. Review the confirmation,
-including any usage limit. Paid listings open your wallet for payment; the purchase is
+including any usage limit. Paid listings open a payment step; the purchase is
 complete only after payment succeeds. Live paid access is valid for the period shown, and
 renewal requires another payment.
 
@@ -62,7 +62,7 @@ the seller's memory. Review the confirmation before unsubscribing.
 
 1. Select **List a memory**, or **Sell** under Settings › Sharing › Marketplace on a Memory.
 2. Select the Memory and fill in the **Listing name**, **Description** and sample content.
-3. Set the price and usage allowance. A paid listing requires a receiving wallet.
+3. Set the price and usage allowance. A paid listing requires a payout account.
 4. Review the details, then select **Publish** to make the listing discoverable.
 
 ![Listing a memory](/images/shots/marketplace-list-dialog.png)
