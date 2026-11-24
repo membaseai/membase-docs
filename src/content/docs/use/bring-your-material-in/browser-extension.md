@@ -15,8 +15,8 @@ source. Use this to bring conversations into memory. To let an AI app read exist
 ## What it captures
 
 Conversations the person has with assistants in the browser. The capture is encrypted with
-the person's wallet key before it leaves the browser, and it is the person's wallet that
-Membase uses to read it back, so the platform sees nothing it was not handed. Which
+the person's own key before it leaves the browser, and only that key can read it back, so the
+platform sees nothing it was not handed. Which
 assistants are captured is the extension's own setting.
 
 ## Connecting it to a Memory

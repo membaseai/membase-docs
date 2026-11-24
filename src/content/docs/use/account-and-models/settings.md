@@ -30,8 +30,7 @@ plans and their terms. Check the confirmation before making a payment or changin
 
 ## Transactions
 
-Review payments sent and received, including plan payments and marketplace purchases. Where
-available, open the linked block explorer to inspect an on-chain settlement.
+Review payments sent and received, including plan payments and marketplace purchases.
 
 ## Your profile
 
