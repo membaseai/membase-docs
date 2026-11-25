@@ -35,9 +35,10 @@ holds it, consent through MCP, and your code never sees a token at all. The
 mostly about keys.
 
 A third credential exists but is not minted by the owner: buying a Memory on the Marketplace
-gives the buyer one. It reaches that one Memory and holds only `ask_memory`: answers, never the
-passages, documents, facts or the seller's profile, and never a write. Every call re-checks the
-purchase and takes one call of the period's allowance.
+gives the buyer one. It reaches that one Memory and holds only search (`search_memories`,
+`search_media`): the passages that match a query, never the fact list, documents or the
+seller's profile, and never a write. Every search re-checks the purchase and takes one call of
+the period's allowance.
 
 ## Access levels
 
@@ -53,8 +54,8 @@ A level is a set of operations. Each level adds to the one before it.
 reaches (`memories`) and the standing rules for using them (`rules`). It is not permission:
 every call is still checked when made.
 
-`ask_memory` is on no developer key, at any level: today only a marketplace buyer's credential
-holds it, and from a key the call is refused with `403` like any verb outside its grant. The
+`ask_memory` is on no developer key, at any level, and no marketplace credential holds it: from
+either the call is refused with `403` like any verb outside its grant. The
 profile tools and `ask_memory` are *explicit*: a credential holds them only when its tool list
 names them, never from its level alone. The [API reference](/build/reference/api-reference/)
 lists each level's ceiling from the tool table itself, which is why `ask_memory` appears under

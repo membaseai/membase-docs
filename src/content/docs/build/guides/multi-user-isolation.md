@@ -75,13 +75,12 @@ answers from is the wrong person's.
 ### Your Memory answers people you sell it to
 
 The reverse case: you hold the memory (a support corpus, a product's knowledge) and many
-people ask it. List that Memory on the Marketplace; what is sold is the Memory, as answers.
-Each subscriber receives a credential of their own that holds only `ask_memory`: the memory
-engine answers from what the Memory learned, and the passages, documents and files never leave
-your account. Lapsing a subscription stops access at once. See
+people search it. List that Memory on the Marketplace; what is sold is the Memory, as search.
+Each subscriber receives a credential of their own that holds only search: each query returns
+the passages that match, never a list of the whole Memory, its documents or files. Lapsing a subscription stops access at once. See
 [Platform overview](/build/concepts/platform-overview/#marketplace).
 
-![The seller's Memory stays in the seller's account; the listing sells it as answers; each subscriber calls ask_memory with their own credential and gets answers, never files](/images/figures/agent-endpoint.svg)
+![The seller's Memory stays in the seller's account; the listing sells it as search; each subscriber searches with their own credential and gets matching passages, never the whole Memory](/images/figures/agent-endpoint.svg)
 
 ## What is not isolation
 

@@ -45,7 +45,8 @@ Look up the word on screen, or the status in the answer.
 | `404 · not_found` | an id outside the key's reach, deleted, or not one of ours; a Memory switched off also drops out of searches and lists | switch the Memory on under **Memory access**; `GET /v1/capabilities` names the Memories in reach |
 | `403 · unauthorized · token missing required scope` | a read-only credential (consent, or a Read key) called a tool that writes; over MCP the same text comes back as a tool error | mint a Read & write key |
 | `403 · unauthorized · not in this agent's capability profile` | the tool is above this credential's grant (a key's level, or a consent connection calling a key-only read tool); over MCP the same text comes back as a tool error | raise the key's level, or mint a higher key; a consent connection needs a developer key for it |
-| `403 · unauthorized` on `ask_memory` | a developer key (keys do not hold it), or a marketplace purchase that is not active or whose calls for the period are used up | search instead; a buyer renews or waits for the next period |
+| `403 · unauthorized` on `ask_memory` | a developer key or a marketplace credential (neither holds it) | search instead |
+| `403 · unauthorized` on a search with a marketplace credential | the purchase is not active, the listing is suspended, or the period's calls are used up | renew, or wait for the next period |
 | `428 · confirmation_required` | a Full access key's destructive verb without `confirm=true`; nothing changed; over MCP the same code comes back as a tool error | pass `confirm=true` after the person agreed |
 | `400 · validation` | an empty `q`, both or neither of `content` and `url`, a `limit` out of range | fix the request |
 | `422 · validation` | a required field is missing or has the wrong type, or a field the API does not know (a `container`, a `model` on ask); `details.fields` names it | fix the request |

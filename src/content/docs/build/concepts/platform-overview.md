@@ -47,7 +47,7 @@ and a credential that reaches several is refused with `422 write_target_required
 | [Activity](/use/automate-and-troubleshoot/activity/) | see what ran | the run a `202` from `add_document` started; a key's own calls are on the key's page |
 | [AI Setup](/use/account-and-models/ai-setup/) | choose the account's model | `422 · capability_unavailable` when there is none |
 | [Connect](/use/manage-your-memory/connect/) | let an AI app read Memories, mint keys | consent tokens and developer keys: [Authentication & Scopes](/build/reference/authentication/) |
-| [Marketplace](/use/share-and-trade/marketplace/) | sell and buy access to a Memory | a buyer's credential, `ask_memory` |
+| [Marketplace](/use/share-and-trade/marketplace/) | sell and buy access to a Memory | a buyer's credential, `search_memories` |
 | [Settings](/use/account-and-models/settings/) | plan, export, delete | `422 · capability_unavailable` with `details.reason: "dormant"` on a free plan whose turns are spent |
 
 ## Credentials
@@ -104,11 +104,11 @@ brings a model of its own under AI Setup or moves to a paid plan.
 
 ## Marketplace
 
-What is sold is a Memory, as answers (listing kind `memory`). The buyer's credential reaches
-that one Memory and holds only `ask_memory`: answers, never the passages, documents, facts or
-the seller's profile, and never a write. Every call re-checks the purchase and takes one call of
-the period's allowance. A listing sold earlier as an agent endpoint is answered by its Memory
-the same way; the other listing kinds are retired, and existing purchases are served until they
+What is sold is a Memory, as search (listing kind `memory`). The buyer's credential reaches
+that one Memory and holds only `search_memories` and `search_media`: the passages that match a
+query, as the account's own keys search, but never the fact list, documents, the seller's
+profile or a write. Every search re-checks the purchase and takes one call of the period's
+allowance. A listing sold earlier as an agent endpoint searches its Memory the same way; the other listing kinds are retired, and existing purchases are served until they
 end. Check the listing's **Included access** section.
 [Marketplace](/use/share-and-trade/marketplace/).
 

@@ -44,7 +44,8 @@ is retained when a model is unavailable, but that does not make hosted search mo
 | `403 · not in this agent's capability profile` | The operation is not granted to this credential, for example a delete or forget from a **Read & write** key. | Have the owner adjust the access level if appropriate. |
 | `428 · confirmation_required` | A destructive call has not been confirmed; nothing changed. | Ask the owner before calling with `confirm=true`; the key still needs Full access. |
 | `422 · write_target_required` | A write from a key that reaches several Memories. | Use a key that reaches the one Memory writes should go to. |
-| `403 · unauthorized` on `ask_memory` | From a developer key: keys do not hold `ask_memory`. From a marketplace credential: the purchase is not active, the listing is suspended, or the period's calls are used up (`details.calls_limit`, `period_end`). | Search with a key and answer with your own model; a buyer renews or waits for the next period. |
+| `403 · unauthorized` on `ask_memory` | Neither a developer key nor a marketplace credential holds `ask_memory`. | Search, and answer with your own model. |
+| `403 · unauthorized` on a marketplace credential's search | The purchase is not active, the listing is suspended, or the period's calls are used up (`details.calls_limit`, `period_end`). | Renew, or wait for the next period. |
 
 A `403` is the API's refusal convention; it does not prove that the supplied secret was
 valid. Do not retry refused requests unchanged. [Authentication](/build/reference/authentication/)

@@ -18,20 +18,20 @@ The **Skills | Memory** switch selects the catalog.
 
 ## Memory listings
 
-A listing sells a **Memory, as answers**. The buyer's AI asks it questions and gets answers
-written from what the Memory knows. It never sees the Memory's files, documents or facts, never
-writes to it, and reaches no other Memory of the seller's. Two earlier kinds are no longer offered
+A listing sells a **Memory, as search**. The buyer's AI searches it and gets the passages that
+match, as it would search a Memory of its own. It cannot list the Memory out whole or open its
+files and documents, never writes to it, and reaches no other Memory of the seller's. Two earlier kinds are no longer offered
 but still show for the people who bought them:
 
 | Type | What you receive |
 |---|---|
-| Memory (answers) | A credential that may only ask that one Memory: `ask_memory` over MCP, `POST /v1/ask` over REST. Answers, never files. Valid 30 days per payment, with the number of questions per period shown on the listing; renew to continue |
+| Memory (search) | A credential that may only search that one Memory: `search_memories` (and `search_media` for photos and video) over MCP, `POST /v1/search` over REST. Matching passages, never the whole Memory or its files. Valid 30 days per payment, with the number of searches per period shown on the listing; renew to continue |
 | Snapshot (no longer offered) | A copy of the listed items at purchase time; later seller edits do not update it |
 | Live memory (no longer offered) | Read access to the seller's memory for the subscription period |
 
-![The seller's Memory stays in the seller's account and the memory engine answers from it; the listing sells it as answers; each subscriber calls ask_memory with their own credential and gets answers, never files; unlisting cuts every subscriber off at once](/images/figures/agent-endpoint.svg)
+![The seller's Memory stays in the seller's account and the memory engine searches it; the listing sells it as search; each subscriber searches with their own credential and gets matching passages, never the whole Memory; unlisting cuts every subscriber off at once](/images/figures/agent-endpoint.svg)
 
-Every question checks the purchase: it must be active and unexpired, the listing not suspended,
+Every search checks the purchase: it must be active and unexpired, the listing not suspended,
 and the period's questions not used up. If any of these fails, the question is refused. A listing
 bought earlier as an agent endpoint is now answered by its Memory the same way.
 

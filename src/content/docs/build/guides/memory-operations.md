@@ -49,8 +49,8 @@ What a Memory's tile says in the app, and what it means to code:
 | Tile word | Meaning | In the API |
 |---|---|---|
 | *Add a source* | reads nothing yet | in reach, `list_documents` lists nothing from it |
-| *On sale* | listed on the Marketplace | buyers hold credentials that `ask_memory` it, and nothing else |
-| *Subscribed* | bought from someone else | `ask_memory` only; no passages, no documents, no writes |
+| *On sale* | listed on the Marketplace | buyers hold credentials that search it, and nothing else |
+| *Subscribed* | bought from someone else | search only; no fact list, no documents, no writes |
 | no word | yours, reading at least one source | in reach; searches answer from what its runs learned |
 
 Renaming a Memory changes the `memory_name` answers carry; ids never change. Deleting a
@@ -243,9 +243,8 @@ and writes one answer, with no agent, no tools and no session. `citations` name 
 answer came from, never a passage. A `model` field is refused (`422`), like any field the API
 does not know.
 
-`ask_memory` is held only when a credential's tool list names it, and today only a marketplace
-buyer's credential does: it reaches the one Memory bought, holds nothing else, and every call
-takes one call of the period's allowance. A developer key does not hold it at any level, and
+`ask_memory` is held only when a credential's tool list names it: an agent exposure's
+credential does; a marketplace buyer's searches instead. A developer key does not hold it at any level, and
 the call is refused with `403 · unauthorized`. A product that wants to put a model over the
 person's memory uses search and its own model ([Claude API](/build/integrations/claude-api/),
 [OpenAI API](/build/integrations/openai-api/)).

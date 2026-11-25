@@ -184,7 +184,7 @@ hits["partial"]                                 # the Memories that could not an
 for f in client.profile_facts.list()["items"]:
     print(f["source_kind"], "·", f["content"])
 
-# ask: one answer from the memory (a credential that holds ask_memory: today, a marketplace buyer's)
+# ask: one answer from the memory (a credential that holds ask_memory: an agent exposure's)
 out = client.ask("Summarise what the seller learned about Postgres RLS.")
 out["answer"], out["citations"]                 # citations name the Memory, never a passage
 ```
@@ -390,7 +390,7 @@ try {
 |---|---|---|---|
 | `search(q, limit=, mode=)` | `POST /v1/search` | `search_memories` | Read |
 | `add(...)`, `documents.add(...)` | `POST /v1/documents/add` | `add_document` | Read & write |
-| `ask(message)` | `POST /v1/ask` | `ask_memory` | marketplace buyer only |
+| `ask(message)` | `POST /v1/ask` | `ask_memory` | an agent exposure's credential only |
 | `capabilities()` | `GET /v1/capabilities` (actions, Memories, `rules`) | `get_capabilities` | any credential |
 | `memories.list(limit=)` | `GET /v1/memories` | `list_memories` | Read |
 | `memories.get(id)` | `GET /v1/memories/{id}` | `get_memory` | Read |
