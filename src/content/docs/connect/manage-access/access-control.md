@@ -42,7 +42,7 @@ it on.
 `tools/list` is filtered per caller. A consent-minted client is offered `get_capabilities`,
 `search_memories`, `list_memories`, `get_memory`, the media reads and, when ticked,
 `list_profile_facts`, and nothing that writes; a key is offered the tools of its level; a
-marketplace buyer's credential is offered `get_capabilities` and `ask_memory` alone. A model
+marketplace buyer's credential is offered `get_capabilities`, `search_memories` and `search_media` alone. A model
 cannot call what it was not offered, and a call that bypasses the list is refused anyway: over
 MCP as a tool error (*token missing required scope*, or *not in this agent's capability
 profile*), over REST as `403 unauthorized`. The table per credential is on

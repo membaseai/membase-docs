@@ -52,7 +52,7 @@ Memory it reaches. `tools/list` is filtered per caller and shows only what the c
 | developer key, Read | `get_capabilities`, `search_memories`, `list_memories`, `get_memory`, `list_documents`, `get_document`, `list_media`, `get_media`, `search_media`; `list_profile_facts` with **Your profile** ticked |
 | developer key, Read & write | plus `add_memory`, `add_document`; `add_profile_fact` with the profile tick |
 | developer key, Full access | plus `forget_memory`, `delete_document`, `delete_media`; `forget_profile_fact` with the profile tick; each only with `confirm=true` |
-| a marketplace buyer's credential | `get_capabilities` and `ask_memory`, on the one Memory bought: answers, never passages |
+| a marketplace buyer's credential | `get_capabilities`, `search_memories` and `search_media`, on the one Memory bought: matching passages, never the fact list or documents |
 
 A call to a tool outside the caller's list is refused as a tool error (HTTP `200`,
 `isError: true`), not an HTTP status: *token missing required scope* when a read-only

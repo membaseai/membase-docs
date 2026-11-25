@@ -34,8 +34,8 @@ If processing fails, resolve the reported issue and update the Memory again.
 
 `search_memories` retrieves relevant passages from every Memory the credential reaches. Each
 result names its Memory (`memory_name`). `ask_memory` returns one answer the memory engine
-writes from the Memories in reach, with no agent and no tools; today only a marketplace
-buyer's credential holds it.
+writes from the Memories in reach, with no agent and no tools; an agent exposure's credential
+holds it, a key or a marketplace credential does not.
 
 - **Allow time for startup and retrieval.** A request after inactivity can take longer.
   The SDKs default to a 90-second timeout; some requests may need longer.
