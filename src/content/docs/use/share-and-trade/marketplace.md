@@ -60,7 +60,8 @@ the seller's memory. Review the confirmation before unsubscribing.
 
 ### Selling
 
-1. Select **List a memory**, or **Sell** under Settings › Sharing › Marketplace on a Memory.
+1. Select **List a memory**, or open a Memory's **Settings** and select **Sell** (**List on
+   Marketplace** in the new look).
 2. Select the Memory and fill in the **Listing name**, **Description** and sample content.
 3. Set the price and usage allowance. A paid listing requires a payout account.
 4. Review the details, then select **Publish** to make the listing discoverable.
@@ -69,7 +70,7 @@ the seller's memory. Review the confirmation before unsubscribing.
 
 Manage listings under **Your listings**. Each row offers **Edit**, **Subscribers**, **View as a
 buyer** and **Delete**, plus **Publish** on a *draft* or **Make private** on a *live* listing;
-on the Memory's side, Settings › Sharing › Marketplace offers **Unlist…**. Deleting or
+on the Memory's side, its **Settings** show the listing: **Edit**, then **Unlist…**. Deleting or
 unlisting a listing cuts its subscribers off at once, so review who it affects first. Deleting
 the Memory itself also takes it off the market: every listing selling it goes, and every
 subscriber loses access at once.

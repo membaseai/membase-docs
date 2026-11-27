@@ -266,7 +266,7 @@ Grant names credentials minted earlier still hold; each covers its current name.
 | Status | Code | When |
 |---|---|---|
 | 400 | `validation` | an empty `q`; both or neither of `content` and `url`; a `limit` out of range |
-| 403 | `unauthorized` | a verb above the credential's access level, or one it does not hold at all (a consent client's delete, a buyer's search) |
+| 403 | `unauthorized` | a verb above the credential's access level, or one it does not hold at all (a consent client's delete, a buyer's fact list) |
 | 404 | `not_found` | an id that is not this credential's to read: outside its reach, deleted, or not one of ours |
 | 422 | `validation` | a malformed body: a field missing, of the wrong type, or unknown (`container` included) |
 | 422 | `write_target_required` | a write from a credential that reaches several Memories |

@@ -28,7 +28,8 @@ connection can use and revoke access when it is no longer needed.
 workflows and Agents to manage their settings and runs.
 
 **Marketplace.** Browse skills and memory listings. A memory listing sells a Memory as
-answers: a buyer asks it and gets answers, never its documents or files. Check its
+search: a buyer's AI searches it and gets the passages that match, never the whole Memory or its
+files. Check its
 **Included access** before purchasing.
 
 ## What runs when
